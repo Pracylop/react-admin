@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Tutorial And Notes
 
-# Creating A React App
+## Creating A React App
 
 To create a react app, run the following command
 
@@ -79,7 +79,66 @@ To create a react app, run the following command
 
 The `react-admin` is the name of the project. This code requires `npx` being installed. It will throw an error if it isn't. You can install `npx` using the following command: `npm install -g npx`
 
-# Run the App
+## Install Supporting Libraries
+
+This tutorial is built on [Material UI](https://mui.com), an onpen-source library for creating UI elements. The instructions for installing it are on the website. The code is:
+
+`npm install @mui/material @emotion/react @emotion/styled @mui/x-data-grid @mui/icons-material react-router-dom@6 react-pro-sidebar formik yup @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/list @nivo/core @nivo/pie @nivo/line @nivo/bar @nivo/geo`
+
+This installs all the libraries used to design the Dashboard including
+
+1. React Router
+2. React Pro Sidebar
+3. Formik
+4. Yup
+5. Full Calendar (https://fullcalendar.io/)
+6. Nivo (https://nivo.rocks/)
+
+## Delete Unnecessary Files
+
+There some files which are created as part of the setup which will be deleted. These include:
+
+- setupTests.js
+- reportWenVitals.js
+- logo.svg
+- App.test.js
+- App.css
+
+Following this, go to `index.js` and remove references to the deleted files
+
+## Edit App.js, index.js and index.css
+
+Open `App.js` and remove the default code. This includes the imports and the Components used to display the default home page. Also, change the appName value from 'App' to 'app'.
+
+Following that, open `index.js` and import BrowserRouter. This will allow us to use React Router and set up Routes.
+
+After importing BrowserRouter, wrap up <App /> in <BrowserRouter>. This will leave `index.js` looking like this:
+
+```import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+```
+
+### Edit index.css
+
+Go to Google Fonts and search for _Source Sans 3_. The video actually says _Source Sans Pro_ but I wasn't able to locate that. Add a Regular 400, 600 and 700. Select the @import, copy the URL and paste it in index.css
+
+### Add Mock Data
+
+Create a folder called `data` in the src directory and copy the mock data from the [Github link](https://github.com/ed-roh/react-admin-dashboard/tree/master/src/data) in the YouTube video description.
+
+## Run the App
 
 Run the app using `npm start`. This will start the server and give you a set URLs which looks like this:
 
@@ -87,3 +146,5 @@ Local: http://localhost:27133
  On Your Network: http://172.21.48.1:27133
 
 These can be used to access the App on the web. Please note that running `npm start` can bring prompts about selecting the PORT NUMBER. Accept and proceed.
+
+## Organize Your Files & Folders
