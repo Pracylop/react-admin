@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Tutorial And Notes
+
+# Creating A React App
+
+To create a react app, run the following command
+
+`npx create-react-app react-admin`
+
+The `react-admin` is the name of the project. This code requires `npx` being installed. It will throw an error if it isn't. You can install `npx` using the following command: `npm install -g npx`
+
+# Run the App
+
+Run the app using `npm start`. This will start the server and give you a set URLs which looks like this:
+
+Local: http://localhost:27133  
+ On Your Network: http://172.21.48.1:27133
+
+These can be used to access the App on the web. Please note that running `npm start` can bring prompts about selecting the PORT NUMBER. Accept and proceed.
