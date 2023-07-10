@@ -1,4 +1,4 @@
-import { createContext, useState, useMemo } from "@fullcalendar/core/preact";
+import { createContext, useState, useMemo } from "react";
 import {createTheme} from '@mui/material/styles';
 
 //color design tokens
@@ -69,7 +69,7 @@ export const tokens = (mode) => ({
                 500: "#666666",
                 600: "#858585",
                 700: "#a3a3a3",
-                900: "#c2c2c2",
+                800: "#c2c2c2",
                 900: "#e0e0e0",
             },
             primary: {
@@ -80,7 +80,7 @@ export const tokens = (mode) => ({
                 500: "#141b2d",
                 600: "#434957",
                 700: "#727681",
-                900: "#a1a4ab",
+                800: "#a1a4ab",
                 900: "#d0d1d5",
             },
             greenAccent: {
@@ -91,7 +91,7 @@ export const tokens = (mode) => ({
                 500: "#4cceac",
                 600: "#70d8bd",
                 700: "#94e2cd",
-                900: "#b7ebde",
+                800: "#b7ebde",
                 900: "#dbf5ee",
             },
             redAccent: {
@@ -102,7 +102,7 @@ export const tokens = (mode) => ({
                 500: "#db4f4a",
                 600: "#e2726e",
                 700: "#e99592",
-                900: "#f1b9b7",
+                800: "#f1b9b7",
                 900: "#f8dcdb",
             },
             blueAccent: {
@@ -113,7 +113,7 @@ export const tokens = (mode) => ({
                 500: "#6870fa",
                 600: "#868dfb",
                 700: "#a4a9fc",
-                900: "#c3c6fd",
+                800: "#c3c6fd",
                 900: "#e1e2fe",
             } 
         }  
