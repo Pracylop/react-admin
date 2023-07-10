@@ -148,3 +148,17 @@ Local: http://localhost:27133
 These can be used to access the App on the web. Please note that running `npm start` can bring prompts about selecting the PORT NUMBER. Accept and proceed.
 
 ## Organize Your Files & Folders
+
+When organizing a project, you need to use a mechanism which makes it easy for to locate files. A good aproach is the Darks Pattern in which you organize folders according to the different components that make up the application.
+
+In this situation, there are there are components which are shared across multiple pages e.g. the sidebar and there are indivudal page components e.g. the dashboard.
+
+The folder 'components' will contain shared components
+The folder 'scenes' will contain different pages. Each page will be represented by an aptly named folder in the 'scenes' folder. The folder 'global' will contain shared page components e.g. the Sidebar and Top bar.Each will be represented by a .jsx file inside the 'global' folder.
+
+Create a `theme.js` file in the `src` folder. This will contain the colours and typography used in the entire app. This will also be used to represent the light and dark mode.
+
+## Vs Code Extensions
+
+Prettier
+Tailwind Shades
